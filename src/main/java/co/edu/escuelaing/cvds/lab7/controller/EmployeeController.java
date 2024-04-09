@@ -16,7 +16,16 @@ public class EmployeeController {
     EmployeeService employeeService;
 
 
-    @GetMapping("/employees")
+    @GetMapping("api/employees")
+    @ResponseBody
+    public List<Employee> employeesApi(Model model) {
+        List<Employee> employeeList = employeeService.getAll();
+        //employeeService.createEmployee(id,name);
+
+        model.addAttribute("employeeList", employeeList);
+        return employeeList;
+    }
+    @GetMapping("api/employees/main")
     public String employees(Model model) {
         List<Employee> employeeList = employeeService.getAll();
         //employeeService.createEmployee(id,name);
@@ -24,22 +33,27 @@ public class EmployeeController {
         model.addAttribute("employeeList", employeeList);
         return "employees";
     }
-    @PostMapping("/employees/create")
-    public String createEmployee(@RequestParam Long employeeId, String firstName,String lastName,String role ,String salary){
-        employeeService.createEmployee(employeeId, firstName, lastName, role, salary);
-        return "redirect:/employees"; // Redirige a la página de lista de empleados después de la creación.
+    @PostMapping("api/employees/create")
+    @ResponseBody
+    public List<Employee> createEmployee(@RequestBody Employee request){
+        employeeService.createEmployee(request.getEmployeeId(), request.getFirstName(),
+                request.getLastName(), request.getRole(), request.getSalary());
+        return employeeService.getAll();
     }
 
-    @PostMapping("/employees/update")
-    public String updateEmployee(@RequestParam Long employeeId, String firstName,String lastName,String role ,String salary){
-        employeeService.updateEmployee(employeeId, firstName, lastName, role, salary);
-        return "redirect:/employees"; // Redirige a la página de lista de empleados después de la actualización.
+    @PostMapping("api/employees/update")
+    @ResponseBody
+    public List<Employee> updateEmployee(@RequestBody Employee request){
+        employeeService.createEmployee(request.getEmployeeId(), request.getFirstName(),
+                request.getLastName(), request.getRole(), request.getSalary());
+        return employeeService.getAll();
     }
 
-    @PostMapping("/employees/delete")
-    public String deleteEmployee(@RequestParam Long employeeId) {
+    @DeleteMapping("/api/employees/delete/{employeeId}")
+    @ResponseBody
+    public List<Employee> deleteEmployee(@PathVariable Long employeeId) {
         employeeService.deleteEmployee(employeeId);
-        return "redirect:/employees"; // Redirige a la página de lista de empleados después de la actualización.
+        return employeeService.getAll();
     }
 
 
