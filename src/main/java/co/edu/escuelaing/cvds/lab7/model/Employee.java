@@ -35,6 +35,12 @@ public class Employee {
         this.role = role;
         this.salary = salary;
     }
+    public Employee(String firstName, String lastName, String role, String salary) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.role = role;
+        this.salary = salary;
+    }
 
     public Long getEmployeeId() {
         return employeeId;

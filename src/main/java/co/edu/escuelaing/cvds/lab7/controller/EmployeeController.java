@@ -33,7 +33,7 @@ public class EmployeeController {
         model.addAttribute("employeeList", employeeList);
         return "employees";
     }
-    @PostMapping("api/employees/create")
+    @PostMapping("api/employees")
     @ResponseBody
     public List<Employee> createEmployee(@RequestBody Employee request){
         employeeService.createEmployee(request.getEmployeeId(), request.getFirstName(),
@@ -41,15 +41,15 @@ public class EmployeeController {
         return employeeService.getAll();
     }
 
-    @PostMapping("api/employees/update")
+    @PutMapping("api/employees/{employeeId}")
     @ResponseBody
-    public List<Employee> updateEmployee(@RequestBody Employee request){
-        employeeService.createEmployee(request.getEmployeeId(), request.getFirstName(),
+    public List<Employee> updateEmployee(@PathVariable Long employeeId,@RequestBody Employee request){
+        employeeService.updateEmployee(employeeId, request.getFirstName(),
                 request.getLastName(), request.getRole(), request.getSalary());
         return employeeService.getAll();
     }
 
-    @DeleteMapping("/api/employees/delete/{employeeId}")
+    @DeleteMapping("/api/employees/{employeeId}")
     @ResponseBody
     public List<Employee> deleteEmployee(@PathVariable Long employeeId) {
         employeeService.deleteEmployee(employeeId);

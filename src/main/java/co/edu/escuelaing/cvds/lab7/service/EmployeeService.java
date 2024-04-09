@@ -26,15 +26,16 @@ public class EmployeeService {
         return employeeRepository.findAll();
     }
 
-    public void updateEmployee(Long id, String name,String lastname,String role,String salary){
-        Employee employee = employeeRepository.getReferenceById(id);
+    public void updateEmployee(Long id, String name, String lastname, String role, String salary) {
+        Employee employee = employeeRepository.findById(id).orElse(null);
+        if (employee != null) {
+            employee.setFirstName(!name.isEmpty() ? name : employee.getFirstName());
+            employee.setLastName(!lastname.isEmpty() ? lastname : employee.getLastName());
+            employee.setRole(!role.isEmpty() ? role : employee.getRole());
+            employee.setSalary(!salary.isEmpty() ? salary : employee.getSalary());
 
-        employee.setFirstName(!name.isEmpty() ? name : employee.getFirstName());
-        employee.setLastName(!lastname.isEmpty() ? lastname : employee.getLastName());
-        employee.setRole(!role.isEmpty() ? role : employee.getRole());
-        employee.setSalary(!salary.isEmpty() ? salary : employee.getSalary());
-
-        employeeRepository.save(employeeRepository.getReferenceById(id));
+            employeeRepository.save(employee);
+        }
     }
 
     public void deleteEmployee(Long id) {
