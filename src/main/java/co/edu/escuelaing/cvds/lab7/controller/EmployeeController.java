@@ -25,6 +25,11 @@ public class EmployeeController {
         model.addAttribute("employeeList", employeeList);
         return employeeList;
     }
+    @GetMapping("api/employees/{employeeId}")
+    @ResponseBody
+    public Employee getEmployeeById(@PathVariable Long employeeId) {
+        return employeeService.getEmployeeById(employeeId);
+    }
     @GetMapping("api/employees/main")
     public String employees(Model model) {
         List<Employee> employeeList = employeeService.getAll();
