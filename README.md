@@ -16,9 +16,14 @@ https://studygyaan.com/spring-boot/spring-boot-project-folder-structure-and-best
 
 - Descargar un cliente de base de datos: DBeaver
 
-
 - Crear el siguiente modelo, use como base la clase `Configuration.java` ya creada:
 <img width="140" alt="image" src="https://github.com/PDSW-ECI/labs/assets/4140058/9df565e5-dd4f-4932-b655-49de6a7c78ea">
+
+
+![image](https://github.com/koket987/LAB07-CVDS/assets/97971883/8b05b903-d8b2-44cc-b167-481a681a0a76)
+
+![image](https://github.com/koket987/LAB07-CVDS/assets/97971883/7b6689f7-0297-4a0e-be5f-5e7abafb39bf)
+
 
 - Cree una interfaz CRUD para esa entidad usando los conocimientos adquiridos en React
 
@@ -29,6 +34,16 @@ https://studygyaan.com/spring-boot/spring-boot-project-folder-structure-and-best
 <img width="675" alt="image" src="https://github.com/PDSW-ECI/labs/assets/4140058/652744e8-f2be-496d-9a57-6e72cb652c7f">
 
 <img width="676" alt="image" src="https://github.com/PDSW-ECI/labs/assets/4140058/79383263-86ac-4bee-81d7-d3d9df1b0a60">
+
+![image](https://github.com/koket987/LAB07-CVDS/assets/97971883/8ee99bef-9e51-4503-9526-f006f143c264)
+
+![image](https://github.com/koket987/LAB07-CVDS/assets/97971883/8fa479dc-530b-426e-b219-9923987515a1)
+
+![image](https://github.com/koket987/LAB07-CVDS/assets/97971883/faab57e6-ec9b-49f6-8828-20f29909a610)
+
+![image](https://github.com/koket987/LAB07-CVDS/assets/97971883/88bb38c4-2019-4d0e-95b1-4fdf09900a60)
+
+
 
 
 ## ENTREGA
