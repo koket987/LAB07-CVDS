@@ -47,6 +47,7 @@ https://studygyaan.com/spring-boot/spring-boot-project-folder-structure-and-best
 
 ![image](https://github.com/koket987/LAB07-CVDS/assets/97971883/88bb38c4-2019-4d0e-95b1-4fdf09900a60)
 
+![image](https://github.com/koket987/LAB07-CVDS/assets/97971883/d89aed5f-b967-4ec3-8972-11b086de94b3)
 
 
 
