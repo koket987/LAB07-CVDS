@@ -39,9 +39,11 @@ https://studygyaan.com/spring-boot/spring-boot-project-folder-structure-and-best
 
 ![image](https://github.com/koket987/LAB07-CVDS/assets/97971883/8fa479dc-530b-426e-b219-9923987515a1)
 
+![image](https://github.com/koket987/LAB07-CVDS/assets/97971883/faab57e6-ec9b-49f6-8828-20f29909a610)
+
 ![image](https://github.com/koket987/LAB07-CVDS/assets/97971883/fd382b18-f88e-4174-972c-d38a2c7c11c7)
 
-![image](https://github.com/koket987/LAB07-CVDS/assets/97971883/faab57e6-ec9b-49f6-8828-20f29909a610)
+![image](https://github.com/koket987/LAB07-CVDS/assets/97971883/970b22a0-f96d-46cf-81fa-516fe42cfe05)
 
 ![image](https://github.com/koket987/LAB07-CVDS/assets/97971883/88bb38c4-2019-4d0e-95b1-4fdf09900a60)
 
@@ -50,3 +52,6 @@ https://studygyaan.com/spring-boot/spring-boot-project-folder-structure-and-best
 
 ## ENTREGA
 - DATA: URL del repositorio en github funcionando con una base de datos local.
+
+https://gentle-ground-0376f5510.5.azurestaticapps.net
+
