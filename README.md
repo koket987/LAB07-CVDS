@@ -11,7 +11,12 @@ https://studygyaan.com/spring-boot/spring-boot-project-folder-structure-and-best
 ## PARTE I. USANDO SPRING DATA DESDE CERO
 - Descargue el código de https://github.com/PDSW-ECI/spring-mvc-with-bootstrap
 - Ejecute el comando `docker run -p 3306:3306 --name some-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql:latest`
+
+![image](https://github.com/koket987/LAB07-CVDS/assets/97971883/b155d679-fe19-4b99-a27a-16985f5ce419)
+
 - Descargar un cliente de base de datos: DBeaver
+
+
 - Crear el siguiente modelo, use como base la clase `Configuration.java` ya creada:
 <img width="140" alt="image" src="https://github.com/PDSW-ECI/labs/assets/4140058/9df565e5-dd4f-4932-b655-49de6a7c78ea">
 
